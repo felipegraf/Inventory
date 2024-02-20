@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryManamegent.Application\InventoryManamegent.Application.csproj" />
+    <ProjectReference Include="..\InventoryManamegent.Domain\InventoryManamegent.Domain.csproj" />
+    <ProjectReference Include="..\InventoryManamegent.Infra.Data\InventoryManamegent.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
