@@ -73,6 +73,7 @@ public class ProductService : IProductService
             var productEntity = await _productRepository.GetByIdAsync(id) ?? throw new InvalidOperationException("Product not found.");
 
             _mapper.Map(productDto, productEntity);
+            productEntity.ValidateDomain();
             await _productRepository.UpdateAsync(productEntity);
         }
         catch (Exception ex)
